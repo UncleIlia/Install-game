@@ -14,9 +14,9 @@ public class CreateNewDirectory {
         logger.addHandler(fileHandler);
 
         if (dir.mkdir()) {
-            logger.info("Папка создана");
+            logger.info("Folder created");
         } else
-            logger.info("Не удалось создать папку");
+            logger.info("Folder not created");
         fileHandler.close();
     }
 

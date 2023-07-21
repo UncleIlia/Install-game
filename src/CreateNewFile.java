@@ -15,10 +15,10 @@ public class CreateNewFile {
 
         try {
             if (newFile.createNewFile()) {
-                logger.info("Файл создан");
+                logger.info("File created");
             }
         } catch (IOException ex) {
-            logger.info("Не удалось создать файл");
+            logger.info("File not created");
         }
         fileHandler.close();
     }
