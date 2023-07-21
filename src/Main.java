@@ -7,17 +7,17 @@ public class Main {
     public static void main(String[] args) throws Exception {
         File initialDir = new File("D://Games1", "temp");
         if (initialDir.mkdir()) {
-            System.out.println("Папка temp создана");
+            System.out.println("Folder temp is created");
         } else {
-            System.out.println("Не удалось создать папку temp");
+            System.out.println("Failed to create folder temp");
         }
 
         File initialFile = new File("D://Games1//temp", "temp.text");
         try {
             if (initialFile.createNewFile())
-                System.out.println("Файл temp.txt создан");
+                System.out.println("File temp.txt created");
         } catch (IOException ex) {
-            System.out.println("Файл temp.txt не был создан");
+            System.out.println("File temp.txt not created");
         }
 
         CreateNewDirectory newDirectory = new CreateNewDirectory();
